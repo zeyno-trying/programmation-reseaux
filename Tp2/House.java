@@ -20,7 +20,7 @@ public class House {
        return code + " " + address + " " + chambres + " " + prix;
     }
     public static void saveHouseInByte(String house) throws IOException{
-      try (BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream("/Users/zizi/Documents/TpPr/Tp2/listHouses.dat", true))) {
+      try (BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream("/Users/zizi/Documents/TpPr/Tp2/listHouses.dat"))) {
         bos.write(house.getBytes());
         bos.write("\n".getBytes());
     }catch (IOException e) {

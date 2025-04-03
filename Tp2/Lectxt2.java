@@ -13,7 +13,7 @@ public class Lectxt2 {
     public static void main(String args[]) throws IOException {
 String nomfich, resultFich;
 int carre;
-nomfich = "/Users/zizi/Documents/TpPr/Tp2/nombre.txt";
+nomfich = "/Users/zizi/Documents/TpPr/Tp2/nombre.dat";
 resultFich = "resultat.txt";
 BufferedReader entree = new BufferedReader (new FileReader(nomfich));
 BufferedWriter sortie = new BufferedWriter (new FileWriter(resultFich));
